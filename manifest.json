@@ -1,0 +1,17 @@
+{
+	"manifest_version": 2,
+	"name": "Bert Search",
+	"version": "1.0",
+	"description": "Search website using bert",
+	"icons": {
+		"48": "icons/border-48.png"
+	},
+	"content_scripts": [
+		{
+			"matches": ["http://*/*", "https://*/*"],
+			"js": [
+				"bert.js"
+			]
+		}
+	]
+}
